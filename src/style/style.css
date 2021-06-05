@@ -12,8 +12,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 252, 252, 0)), to(rgba(48, 44, 44, 0.753))), url(/src/img/background.jpg);
-  background-image: linear-gradient(rgba(253, 252, 252, 0), rgba(48, 44, 44, 0.753)), url(/src/img/background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 252, 252, 0)), to(rgba(48, 44, 44, 0.822))), url(/src/img/background.jpg);
+  background-image: linear-gradient(rgba(253, 252, 252, 0), rgba(48, 44, 44, 0.822)), url(/src/img/background.jpg);
   background-size: cover;
   will-change: transform;
   z-index: -1;
@@ -90,7 +90,7 @@ nav .contact {
 .homepage {
   display: -ms-grid;
   display: grid;
-  min-height: 100vh;
+  min-height: 90vh;
   -ms-grid-columns: 10% (minmax(5rem, 1fr))[3] 10%;
       grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
   -ms-grid-rows: 1fr 2fr 1fr;
@@ -99,21 +99,30 @@ nav .contact {
 
 .homepage h2 {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  grid-column: 2/2;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  color: #4071ce;
+  color: #fbf7fc;
+  font-size: 8rem;
 }
 
 .homepage .intel {
   -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  color: #d64747;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+
+.homepage .intel h3, .homepage .intel p {
+  color: red;
+  font-size: 20rem;
+  font-weight: 700;
+}
+
+.homepage .intel p {
+  font-size: 10rem;
 }
 
 .homepage h3 {
@@ -276,9 +285,9 @@ footer ul {
 }
 
 footer h1 {
-  -webkit-box-flex: 7;
-      -ms-flex: 7;
-          flex: 7;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   color: white;
 }
 

@@ -4,3 +4,5 @@ add links to projects
 make footer links glow upon hover
 give nav bar ids to reference to
 make mobile friendly
+
+REBUILD!!!
