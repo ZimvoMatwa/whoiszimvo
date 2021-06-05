@@ -12,8 +12,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 252, 252, 0)), to(rgba(48, 44, 44, 0.822))), url(/src/img/background.jpg);
-  background-image: linear-gradient(rgba(253, 252, 252, 0), rgba(48, 44, 44, 0.822)), url(/src/img/background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 252, 252, 0)), to(rgba(48, 44, 44, 0.822))), url(./img/background.jpg);
+  background-image: linear-gradient(rgba(253, 252, 252, 0), rgba(48, 44, 44, 0.822)), url(./img/background.jpg);
   background-size: cover;
   will-change: transform;
   z-index: -1;
