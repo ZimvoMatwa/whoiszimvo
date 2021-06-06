@@ -67,5 +67,33 @@
         top: 50%;
         left: 80%;
         transform: translate(-50%, -50%);
+
+        background-image: url(./img/hi.jpg);
+        background-size: cover;
+        padding: 10rem 0 0;
+        background: linear-gradient(rgba(66, 61, 61, 0.747));
+        max-width: 40ch;
+        // place-items: center;
+        
+        .resume {
+            padding: 1.5rem;
+            max-height: fit-content;
+            width: auto;
+
+            .title {
+                position: relative;
+                width: max-content;
+            }
+            .title::after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background: green;
+            }
+            
+        }
     }
 }

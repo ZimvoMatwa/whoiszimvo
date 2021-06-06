@@ -189,7 +189,22 @@ nav .contact {
 }
 
 .projects .cards .card h4 {
+  padding: 1.5rem;
   margin-top: 3rem;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.projects .cards .card h4::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: green;
+  left: 0;
+  bottom: 0;
 }
 
 .projects .cards .card p {
@@ -254,6 +269,37 @@ nav .contact {
   left: 80%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-image: url(./img/hi.jpg);
+  background-size: cover;
+  padding: 10rem 0 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 61, 61, 0.747)));
+  background: linear-gradient(rgba(66, 61, 61, 0.747));
+  max-width: 40ch;
+}
+
+.who .persona .resume {
+  padding: 1.5rem;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  width: auto;
+}
+
+.who .persona .resume .title {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.who .persona .resume .title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: green;
 }
 
 footer {
