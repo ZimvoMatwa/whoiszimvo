@@ -62,11 +62,24 @@ nav {
             mix-blend-mode: screen;
         }
     }
+    
+    .ref {
+        padding: 2rem;
+    }
+    .ref:hover {
+        background: rgb(72, 153, 207);
+        padding: 1rem 2rem;
+        border-radius: 0.7rem;
+        color: white;
+    }
 
     .contact {
         background: rgb(72, 153, 207);
         padding: 1rem 2rem;
         border-radius: 0.7rem;
+    }
+    .contact:hover {
+        color: white;
     }
 
 }

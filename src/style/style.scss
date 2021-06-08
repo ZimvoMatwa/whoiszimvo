@@ -53,6 +53,16 @@ a {
     text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+    background: rgb(35, 77, 155);
+}
+body::-webkit-scrollbar-thumb {
+    background: rgb(226, 77, 8);
+}
+
 @media screen and (max-width: 1200px) {
     html {
         font-size: 50%;

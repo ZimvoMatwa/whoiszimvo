@@ -1,4 +1,5 @@
 .what {
+    // background: linear-gradient(rgb(28, 92, 187),white)
     background: rgb(96, 83, 160);
     // position: relative;
     img {
@@ -39,22 +40,38 @@
             overflow: hidden;
             // padding: 1.5rem;
 
+            .gitrepo {
+                font-size: 2rem;
+                display: flex;
+                // flex-direction: column;
+                padding: 2rem;
+                margin: 1.7rem 13rem;
+                width: fit-content;
+                text-align: center;
+            }
+            .gitrepo:hover {
+                    background: rgb(72, 153, 207);
+                    // padding: 1rem 2rem;
+                    border-radius: 0.7rem;
+                    color: white;
+            }
+
             h4 {
                 padding: 1.5rem;
                 // margin: 10rem 0rem;
                 margin-top: 3rem;
-                position: relative;
-                width: max-content;
+                // position: relative;
+                // width: max-content;
             }
-            h4::after {
-                content: "";
-                position: absolute;
-                height: 5px;
-                width: 100%;
-                background: green;
-                left: 0;
-                bottom: 0;
-            }
+            // h4::after {
+            //     content: "";
+            //     position: absolute;
+            //     height: 5px;
+            //     width: 100%;
+            //     background: green;
+            //     left: 0;
+            //     bottom: 0;
+            // }
             p {
                 padding: 2rem;
             }

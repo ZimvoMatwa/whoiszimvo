@@ -81,10 +81,25 @@ nav #emblem::after {
   mix-blend-mode: screen;
 }
 
+nav .ref {
+  padding: 2rem;
+}
+
+nav .ref:hover {
+  background: #4899cf;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  color: white;
+}
+
 nav .contact {
   background: #4899cf;
   padding: 1rem 2rem;
   border-radius: 0.7rem;
+}
+
+nav .contact:hover {
+  color: white;
 }
 
 .homepage {
@@ -188,23 +203,28 @@ nav .contact {
   overflow: hidden;
 }
 
+.projects .cards .card .gitrepo {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  margin: 1.7rem 13rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.projects .cards .card .gitrepo:hover {
+  background: #4899cf;
+  border-radius: 0.7rem;
+  color: white;
+}
+
 .projects .cards .card h4 {
   padding: 1.5rem;
   margin-top: 3rem;
-  position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.projects .cards .card h4::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  background: green;
-  left: 0;
-  bottom: 0;
 }
 
 .projects .cards .card p {
@@ -227,7 +247,6 @@ nav .contact {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #f1f5f5;
-  margin: auto;
 }
 
 .who li {
@@ -259,8 +278,8 @@ nav .contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 55rem;
   margin-top: 10rem;
+  padding-right: 10rem;
 }
 
 .who .content h1, .who .content h3, .who .content h4 {
@@ -278,6 +297,10 @@ nav .contact {
   letter-spacing: -0.02em;
 }
 
+.who .content .contact-list a {
+  color: black;
+}
+
 .who .persona {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,6 +314,29 @@ nav .contact {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url(./img/hi.jpg);
+  background-size: cover;
+  line-height: 1.6;
+  border-radius: 5rem;
+  margin: 2rem;
+}
+
+.who .persona h3, .who .persona p, .who .persona a {
+  margin-left: 25rem;
+}
+
+.who .persona .resume a {
+  font-size: 2.5rem;
+  background-color: #52ff2f;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
+}
+
+.who .persona .resume a:hover {
+  background: #3289b8;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  color: white;
 }
 
 footer {
@@ -378,6 +424,18 @@ li {
 
 a {
   text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #234d9b;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #e24d08;
 }
 
 @media screen and (max-width: 1200px) {
