@@ -94,12 +94,39 @@ nav {
         grid-column: 2/2;
         align-self: flex-end;
         color: rgb(251, 247, 252);
-        font-size: 8rem;
+        font-size: 7rem;
         // visibility: hidden;
+        font-family: "Source Code Pro", monospace;
+        position: relative;
     }
+
+    h2::before,
+    h2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    h2::before {
+        background: teal;
+        animation: typewriter 4s ease 1s forwards;
+    }
+    @keyframes typewriter {
+        to {
+            left: 100%;
+        }
+    }
+
+
     .intel {
         grid-column: 4/6;
         grid-row: 1/4;
+        position: relative;
+        transform: translateY(20rem);
+        opacity: 0;
+        animation: fadeInUp 2s ease 5s forwards;
         h3, p {
             color: red;
             font-size: 20rem;
@@ -109,6 +136,14 @@ nav {
             font-size: 10rem;
         }
     }
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
     h3 {
         padding-bottom: 3rem;
     }

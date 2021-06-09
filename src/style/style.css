@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Source+Code+Pro&family=Roboto:ital@0;1&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap') */
 .home {
   overflow: hidden;
@@ -118,7 +118,37 @@ nav .contact:hover {
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #fbf7fc;
-  font-size: 8rem;
+  font-size: 7rem;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+}
+
+.homepage h2::before,
+.homepage h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.homepage h2::before {
+  background: teal;
+  -webkit-animation: typewriter 4s ease 1s forwards;
+          animation: typewriter 4s ease 1s forwards;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
 }
 
 .homepage .intel {
@@ -128,6 +158,12 @@ nav .contact:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
+  position: relative;
+  -webkit-transform: translateY(20rem);
+          transform: translateY(20rem);
+  opacity: 0;
+  -webkit-animation: fadeInUp 2s ease 5s forwards;
+          animation: fadeInUp 2s ease 5s forwards;
 }
 
 .homepage .intel h3, .homepage .intel p {
@@ -138,6 +174,22 @@ nav .contact:hover {
 
 .homepage .intel p {
   font-size: 10rem;
+}
+
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .homepage h3 {
@@ -257,15 +309,24 @@ nav .contact:hover {
   width: fit-content;
 }
 
-.who h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.who .buns {
   font-family: 'Odibee Sans', cursive;
   font-weight: lighter;
   color: #3058c7;
   padding-left: 10%;
   padding-top: 5rem;
+}
+
+.who h2::before {
+  background: #3058c7;
+  -webkit-animation: typewriter 4s ease forwards;
+          animation: typewriter 4s ease forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
 }
 
 .who .content {
@@ -278,6 +339,9 @@ nav .contact:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 10rem;
   padding-right: 10rem;
 }

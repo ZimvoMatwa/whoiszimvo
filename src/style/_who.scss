@@ -4,6 +4,7 @@
     // align-items: center;
     justify-content: space-between;
     background: #f1f5f5;
+    // padding-left: 10%;
     // margin: 5rem;
     li {
         list-style: none;
@@ -13,21 +14,30 @@
     }
 
 
-    h2 {
-        display: flex;
+    .buns {
+        // display: flex;
         font-family: 'Odibee Sans', cursive;
         font-weight: lighter;
         color: #3058c7;
-        padding-left: 10%;
+        padding-left: 10%; //remove???
         padding-top: 5rem;
         // padding-top: 5rem;
+    }
+    h2::before {
+        background: #3058c7;
+        animation: typewriter 4s ease forwards;
+    }
+    @keyframes typewriter {
+        to {
+            left: 100%;
+        }
     }
 
     .content {
         display: flex;
         flex: 1;
         align-items: center;
-        // justify-content: center;
+        justify-content: center;
         // max-width: 55rem;    
         margin-top: 10rem;
         padding-right: 10rem;
