@@ -317,18 +317,6 @@ nav .contact:hover {
   padding-top: 5rem;
 }
 
-.who h2::before {
-  background: #3058c7;
-  -webkit-animation: typewriter 4s ease forwards;
-          animation: typewriter 4s ease forwards;
-}
-
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-
 .who .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,6 +432,7 @@ footer img {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {

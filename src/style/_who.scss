@@ -23,15 +23,6 @@
         padding-top: 5rem;
         // padding-top: 5rem;
     }
-    h2::before {
-        background: #3058c7;
-        animation: typewriter 4s ease forwards;
-    }
-    @keyframes typewriter {
-        to {
-            left: 100%;
-        }
-    }
 
     .content {
         display: flex;
