@@ -38,18 +38,33 @@
             text-align: center;
             border-radius: 2rem;
             overflow: hidden;
+            align-self: center;
             // padding: 1.5rem;
 
             .gitrepo {
                 font-size: 2rem;
-                display: flex;
-                // flex-direction: column;
+                // display: flex;
                 padding: 2rem;
                 margin: 1.7rem 13rem;
                 width: fit-content;
                 text-align: center;
             }
             .gitrepo:hover {
+                    background: rgb(72, 153, 207);
+                    // padding: 1rem 2rem;
+                    border-radius: 0.7rem;
+                    color: white;
+            }
+            .buns {
+                font-size: 2rem;
+                // display: flex;
+                padding: 2rem;
+                margin: 1rem 13rem;
+                width: fit-content;
+                text-align: center;
+                margin-left: 14rem;
+            }
+            .buns:hover {
                     background: rgb(72, 153, 207);
                     // padding: 1rem 2rem;
                     border-radius: 0.7rem;

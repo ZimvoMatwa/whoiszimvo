@@ -253,13 +253,12 @@ nav .contact:hover {
   text-align: center;
   border-radius: 2rem;
   overflow: hidden;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .projects .cards .card .gitrepo {
   font-size: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 2rem;
   margin: 1.7rem 13rem;
   width: -webkit-fit-content;
@@ -269,6 +268,23 @@ nav .contact:hover {
 }
 
 .projects .cards .card .gitrepo:hover {
+  background: #4899cf;
+  border-radius: 0.7rem;
+  color: white;
+}
+
+.projects .cards .card .buns {
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 1rem 13rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin-left: 14rem;
+}
+
+.projects .cards .card .buns:hover {
   background: #4899cf;
   border-radius: 0.7rem;
   color: white;
